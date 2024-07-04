@@ -50,6 +50,33 @@ for (let index of array5) {
 }
 
 
+// task #9
 
+let array4= [1, 2, 3, 4, 5];
+
+
+// task #8
+
+let array3= [1, 2, 3, 4, 5];
+let sum = 0;
+
+for (let item = 0; item < array3.length; item++) {
+    sum += array3[item];
+    
+}
+console.log(sum);
+
+
+
+// task #7
+
+let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let i = 0; i < array2.length; i++) {
+    if (array2[i] === 5) {
+        console.log('არის');
+        break;
+    }
+}
 
 
