@@ -1,3 +1,6 @@
+'use strict'
+
+
 // task #12
 let array8 =  [ [2, -3, 5, 11], [1, -35, -11], [12, -36, -24] ];
 
@@ -53,6 +56,12 @@ for (let index of array5) {
 // task #9
 
 let array4= [1, 2, 3, 4, 5];
+let sum1 = 0;
+for (const item of array4) {
+    sum1 += item;
+}
+let average = sum1 / array4.length;
+console.log(average);
 
 
 // task #8
@@ -60,9 +69,12 @@ let array4= [1, 2, 3, 4, 5];
 let array3= [1, 2, 3, 4, 5];
 let sum = 0;
 
-for (let item = 0; item < array3.length; item++) {
-    sum += array3[item];
+// for (let item = 0; item < array3.length; item++) {
+//     sum += array3[item];
     
+// }
+for (let item of array3) {
+    sum = sum + item;
 }
 console.log(sum);
 
@@ -78,5 +90,26 @@ for (let i = 0; i < array2.length; i++) {
         break;
     }
 }
+
+// task #6
+
+let getAge = (birthYear,yearNow) => {
+    let age = yearNow - birthYear;
+    // if (age > 18) {
+    //     return 'adult'
+    // }
+    // return 'not adult';
+
+    let ageResult = age > 18 ? 'adult' : 'not abult'
+    return ageResult
+}
+
+let result = getAge(1991,2024)
+console.log(result);
+
+
+// task #5
+
+let array = [1,2,3,4,5];
 
 
